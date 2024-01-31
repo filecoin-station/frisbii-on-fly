@@ -26,11 +26,11 @@ Run `fly deploy` to update the Fly.io deployment.
 
 ### random words
 
-CID:
+https://frisbii.fly.dev/ipfs/bafkreih25dih6ug3xtj73vswccw423b56ilrwmnos4cbwhrceudopdp5sq
 
 ```
 bafkreih25dih6ug3xtj73vswccw423b56ilrwmnos4cbwhrceudopdp5sq
-``
+```
 
 Created using [go-car](https://github.com/ipld/go-car/):
 
