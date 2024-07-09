@@ -22,6 +22,14 @@ docker rm -f frisbii && docker run -it --name frisbii -p 3000:3000 frisbii-on-fl
 
 Run `fly deploy` to update the Fly.io deployment.
 
+The peer identity (private key) is configured via the environment variable `PRIVATE_KEY`.
+
+The Fly.io secrets contain the private key for the following identity:
+
+```
+12D3KooWC8gXxg9LoJ9h3hy3jzBkEAxamyHEQJKtRmAuBuvoMzpr
+```
+
 ## CIDs
 
 ### random words

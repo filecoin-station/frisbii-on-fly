@@ -6,11 +6,13 @@ WORKDIR /app
 ENV GOPATH=/app/go
 RUN go install github.com/ipld/frisbii/cmd/frisbii@latest
 
+ADD entrypoint.sh entrypoint.sh
 ADD data data
 
 EXPOSE 3000
-ENTRYPOINT [ \
-  "/app/go/bin/frisbii", \
+ENTRYPOINT [ "/app/entrypoint.sh" ]
+
+CMD [ \
   "--announce=roots", \
   "--listen=:3000", \
   "--public-addr=https://frisbii.fly.dev:443", \
